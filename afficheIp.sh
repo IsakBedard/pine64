@@ -1,6 +1,5 @@
 #!/bin/bash
-
-touch /etc/issue
-ip addr | grep global > /etc/issue
-grep -o '[^ ]\+' /etc/issue
+touch temp
+ip addr | grep global > temp
+grep -o '[^ ]\+' temp | grep / - > /etc/issue 
 
